@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Password</title>
+	<style type="text/css">
+		body{
+			bacground-color:#58FCEC;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		function checkpassword() {
+			var password=document.getElementById("passwordbox")
+			var passwordText= password.value;
+			if(passwordText== "0pen"){return true;
+			}
+			else{
+				alert("Its not a trick just type the password. or dubble check")
+				return false;
+			}
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+	<h1>WELCOME</h1>
+	<h3>Enter the password</h3>
+	<p>password: <input id="passwordbox" type="password"></p>
+	<button><a href="Adam's website.html" onclick="return checkpassword();">Go here</a></button>
+</body>
+<p>The password on this page is 0pen</p>
+</html>
